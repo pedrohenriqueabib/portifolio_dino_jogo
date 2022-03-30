@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.aviso{
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+}
+
+.iniciar{
+    width: 20%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.voltar{    
+    width: 20%;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.dino{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-image: url('../dino.png');
+}
+
+.cactus{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-image: url('../cactus.png');
+}
+
+.fim, #pontos{
+    margin-top: 100px;
+    text-align: center;
+}
+
+@keyframes slideRight{  /*animação*/
+    from{
+        background-position: 70000%;
+    }
+    
+    to{
+        background-position: 0;
+    }
+}
+
+.background{
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    background-image: url('../background.png');
+    background-repeat: repeat-x;
+    animation: slideRight 600s infinite linear;
+    width: 80%;
+    height: 200px;
+    display: none;
+}
